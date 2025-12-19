@@ -6,38 +6,43 @@ export default function Home(){
 
   return (
     <div id="top">
-      <section className="hero">
-        <div className="card hero-grid">
-          <div className="hero-left">
-            <div className="kicker">✨ Fresh desserts • Coffee • Crepes • Cakes</div>
-            <h1>P&P Desserts & Coffee</h1>
-            <p className="lead">
-              A cozy spot for coffee, waffles & crepes, desserts, cakes, cheesecakes, smoothies, and more.
-              Browse the full menu and visit us today.
-            </p>
+      <section className="hero-video-section">
+        <div className="video-background">
+          <video autoPlay loop muted playsInline>
+            <source src="/background-video.mp4" type="video/mp4" />
+          </video>
+          <div className="video-overlay"></div>
+        </div>
+        <div className="hero-content">
+          <div className="kicker">✨ Fresh desserts • Coffee • Crepes • Cakes</div>
+          <h1>P&P Desserts & Coffee</h1>
+          <p className="lead">
+            A cozy spot for coffee, waffles & crepes, desserts, cakes, cheesecakes, smoothies, and more.
+            Browse the full menu and visit us today.
+          </p>
+          <div className="hero-actions">
+            <Link className="btn primary" to="/menu">View Menu</Link>
+            <a className="btn secondary" href={googleMapsLink} target="_blank" rel="noreferrer">Get Directions</a>
+          </div>
+        </div>
+      </section>
 
-            <div className="hero-actions">
-              <Link className="btn primary" to="/menu">View Menu</Link>
-              <a className="btn secondary" href={googleMapsLink} target="_blank" rel="noreferrer">Get Directions</a>
+      <section className="section">
+        <div className="card hero-info-grid">
+          <div className="card promo">
+            <h3>Popular right now</h3>
+            <p>Nutella Crepe • Tiramisu Latte • Cheesecake • Smoothies • Italian Sodas</p>
+          </div>
+          <div className="card promo">
+            <h3>Catering & whole cakes</h3>
+            <p>Whole cakes and cheesecakes available — ask about fillings and custom options.</p>
+            <div style={{marginTop:12}}>
+              <Link className="btn" to="/contact">Request catering</Link>
             </div>
           </div>
-
-          <div className="hero-right">
-            <div className="card promo" style={{boxShadow:'none'}}>
-              <h3>Popular right now</h3>
-              <p>Nutella Crepe • Tiramisu Latte • Cheesecake • Smoothies • Italian Sodas</p>
-            </div>
-            <div className="card promo" style={{boxShadow:'none'}}>
-              <h3>Catering & whole cakes</h3>
-              <p>Whole cakes and cheesecakes available — ask about fillings and custom options.</p>
-              <div style={{marginTop:12}}>
-                <Link className="btn" to="/contact">Request catering</Link>
-              </div>
-            </div>
-            <div className="card promo" style={{boxShadow:'none'}}>
-              <h3>Hours</h3>
-              <p>Add business hours here once confirmed (Google listing sometimes changes).</p>
-            </div>
+          <div className="card promo">
+            <h3>Hours</h3>
+            <p>Add business hours here once confirmed (Google listing sometimes changes).</p>
           </div>
         </div>
       </section>
