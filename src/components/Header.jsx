@@ -18,9 +18,6 @@ export default function Header(){
             <NavLink to="/menu" className={({isActive}) => isActive ? 'active' : undefined}>Menu</NavLink>
             <NavLink to="/contact" className={({isActive}) => isActive ? 'active' : undefined}>Contact</NavLink>
           </nav>
-
-          {/* “Preview button” for you (quick jump to the full site menu page) */}
-          <a className="btn primary" href="/menu">Preview Menu</a>
         </div>
       </div>
     </header>

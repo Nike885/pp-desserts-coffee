@@ -5,7 +5,7 @@ export default function Footer(){
         <div>© {new Date().getFullYear()} P&P Desserts & Coffee</div>
         <div style={{display:'flex', gap:12}}>
           <a className="btn" href="#top">Back to top</a>
-          <a className="btn" href="/contact">Order / Contact</a>
+          <a className="btn" href="/contact">Contact</a>
         </div>
       </div>
     </footer>

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 export default function Home(){
   // Replace these with real links if the shop gives them
   const googleMapsLink = "https://www.google.com/maps/search/?api=1&query=P%26P+Desserts+and+Coffee"
-  const orderLink = "#"
 
   return (
     <div id="top">
@@ -14,13 +13,12 @@ export default function Home(){
             <h1>P&P Desserts & Coffee</h1>
             <p className="lead">
               A cozy spot for coffee, waffles & crepes, desserts, cakes, cheesecakes, smoothies, and more.
-              Browse the full menu, then call or order online.
+              Browse the full menu and visit us today.
             </p>
 
             <div className="hero-actions">
-              <Link className="btn primary" to="/menu">Preview Website (Menu)</Link>
+              <Link className="btn primary" to="/menu">View Menu</Link>
               <a className="btn secondary" href={googleMapsLink} target="_blank" rel="noreferrer">Get Directions</a>
-              <a className="btn" href={orderLink}>Order Online</a>
             </div>
           </div>
 
